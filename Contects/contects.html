@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contects.css" />
+    <link rel="stylesheet" href="contectsMedia.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../home.html"><img src="img/logo.png" alt="Logo Img" /></a>
+      </div>
+      <div onclick="burgerMenu()" class="burger">
+        <img src="img/burgerMenu.svg" alt="burgerMenu" />
+      </div>
+      <div class="burgerBigBox">
+        <div class="burgerSmallBox">
+          <nav style="display: block" class="navOne">
+            <ul style="flex-direction: column; height: 150px">
+              <li class="learn">Դասընթացներ</li>
+              <div style="margin-top: 0; margin-left: 275px" class="learnBox">
+                <ul class="learnUl">
+                  <li>HTML</li>
+                  <li class="cssLearning">CSS</li>
+                  <div style="margin-left: 212px" class="cssLearningBox">
+                    <ul>
+                      <li>Sass</li>
+                    </ul>
+                  </div>
+                  <li class="cssLearning">JavaScript</li>
+                  <div
+                    style="
+                      width: 120px;
+                      margin-top: 25px;
+                      margin-left: 252px;
+                      height: 90px;
+                      margin-top: 57px;
+                    "
+                    class="cssLearningBox"
+                  >
+                    <ul>
+                      <li>NodeJS</li>
+                      <li>ReactJS</li>
+                      <li>JQuery</li>
+                    </ul>
+                  </div>
+                  <li>Git/Github</li>
+                  <li class="cPlPlLi">C++</li>
+                </ul>
+              </div>
+              <li class="learn">Վարժություններ</li>
+              <div
+                style="margin-left: 293px; height: 35px; margin-top: 60px"
+                class="learnBox"
+                style="height: 35px; margin-top: 60px; margin-left: 120px"
+              >
+                <ul class="learnUl">
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <li>Տեղեկություն</li>
+            </ul>
+          </nav>
+          <div onclick="burgerMenu()" class="burgerMenuClose">
+            <img src="img/burgerMenuClose.svg" alt="burgerMenu" />
+          </div>
+        </div>
+      </div>
+      <nav class="navOne">
+        <ul>
+          <li class="learn"><a href="Learning">Դասընթացներ</a></li>
+          <div class="learnBox">
+            <ul class="learnUl">
+              <li>HTML</li>
+              <li class="cssLearning">CSS</li>
+              <div class="cssLearningBox">
+                <ul>
+                  <li>Sass</li>
+                </ul>
+              </div>
+              <li class="cssLearning">JavaScript</li>
+              <div
+                style="
+                  width: 120px;
+                  margin-top: 25px;
+                  margin-left: 251px;
+                  height: 90px;
+                  margin-top: 57px;
+                "
+                class="cssLearningBox"
+              >
+                <ul>
+                  <li>NodeJS</li>
+                  <li>ReactJS</li>
+                  <li>JQuery</li>
+                </ul>
+              </div>
+              <li>Git/Github</li>
+              <li class="cPlPlLi">C++</li>
+            </ul>
+          </div>
+          <li class="learn">
+            <a href="Varjutyun/varjutyun.html">Վարժություններ</a>
+          </li>
+          <div
+            style="margin-left: 170px; height: 35px; margin-top: 60px"
+            class="learnBox"
+            style="height: 35px; margin-top: 60px; margin-left: 120px"
+          >
+            <ul class="learnUl">
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <li><a href="#">Տեղեկություն</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <nav class="navMain">
+        <div class="navTitle">
+          <p>Դասընթացներ</p>
+        </div>
+        <div class="learnBigBox">
+          <div class="learnBigBoxJavaScript">
+            <p>JavaScript</p>
+          </div>
+          <div class="learnBigBoxHTML">
+            <p>HTML</p>
+          </div>
+          <div class="learnBigBoxCss">
+            <p>CSS</p>
+          </div>
+          <div class="learnBigBoxGit">
+            <p>Git/GitHub</p>
+          </div>
+          <div class="learnBigBoxCplpl">
+            <p class="cPlPlLi">C++</p>
+          </div>
+        </div>
+      </nav>
+
+      <menu>
+        <div class="menuTitle">
+          <p>Contects</p>
+        </div>
+
+        <div class="menuContectsBigBox">
+          <p>
+            Այս կայքի վիդեոդասերի միջոցով կարող եք սովորել Frontend
+            ծրագրավորում(Html, Css, JavaScript): Ինչպես նաև ուսումնասիրել նրանց
+            մի քանի գրադարաններ(Framework), ինչպիսին են` Css` Sass, JavaScript`
+            JQuery, ReactJS և այլն։
+          </p>
+          <p>
+            Այստեղ կգտնեք վիդեոդասեր նաև Beckend ծրագրավորման ոլորտում ինչպիսին
+            են NodeJS-ը և C++(չավարտված)
+          </p>
+          <p>
+            Կսովորեք օգտագործել Git Ինչպես նաև կայքերի տեղադրումը GitHub-ում
+          </p>
+          <p>
+            Կայքը ստեղծված է Մհեր Հայրապետյանի կողմից որպես պրակտիկա, որի
+            միջոցով որոշակի տեղեկություն կունենաք ծրագրավորման մասին
+          </p>
+        </div>
+      </menu>
+    </main>
+
+    <script src="contects.js"></script>
+  </body>
+</html>
