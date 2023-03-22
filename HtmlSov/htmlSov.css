@@ -20,6 +20,8 @@ header {
   align-items: center;
   padding: 0 20px;
   background-color: #021550;
+  position: fixed;
+  z-index: 1;
 }
 
 .logo {
@@ -219,6 +221,7 @@ header {
   height: 100vh;
   background-color: rgb(47, 95, 114);
   position: fixed;
+  margin-top: 100px;
 }
 
 .navTitle {
@@ -235,7 +238,11 @@ header {
 
 /* Learning Big Box */
 
-.learnBigBoxJavaScript, .learnBigBoxHTML, .learnBigBoxCss, .learnBigBoxGit, .learnBigBoxCplpl {
+.learnBigBoxJavaScript,
+.learnBigBoxHTML,
+.learnBigBoxCss,
+.learnBigBoxGit,
+.learnBigBoxCplpl {
   color: rgb(255, 255, 255);
   background-color: rgb(0, 81, 87);
   font-size: 1.1em;
@@ -310,33 +317,75 @@ header {
 
 /* Learning Big Box Close */
 
-/* Menu */
-
-.menuTitle {
-    padding-left: 255px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    /* background-color: red; */
-    font-size: 1.5em;
-    color: #021550;
+.htmlSovBigBox {
+  padding-left: 255px;
+  width: 100%;
+  position: relative;
+  top: 100px;
 }
 
-.menuTitle p {
-    margin-left: -50px;
+.htmlSovBigBoxTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 1.5em;
+  color: #021550;
 }
 
-.menuContectsBigBox {
-    width: 100%;
-    padding-left: 255px;
-    color: #021550;
-    font-size: 1.2em;
+.htmlSovBigBoxTitle p {
+  margin-left: -50px;
 }
 
-.menuContectsBigBox p {
-    margin-top: 10px;
+.htmlSovBigBoxInform {
+  width: 100%;
 }
 
-/* Menu Close */
+.htmlSovBigBoxInformTex {
+  color: #021550;
+  font-size: 1.1em;
+  padding-right: 5px;
+}
+
+.htmlSovBigBoxInformVideo {
+  width: 100%;
+  /* background-color: red; */
+  /* min-height: 10px; */
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.htmlSovBigBoxInformVideoOne {
+  width: 100%;
+  height: 40px;
+  background-color: skyblue;
+  margin-top: 10px;
+  padding: 10px;
+  color: #020b27;
+  cursor: pointer;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.htmlSovBigBoxInformVideoOneVideo {
+  width: 100%;
+  height: 0px;
+  background-color: skyblue;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  transition: 1s;
+}
+
+.height {
+  height: 450px;
+}
+
+iframe {
+  border: none;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+}
