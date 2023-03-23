@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #021550;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background-color: aqua;
+  opacity: 0.4;
+  padding: 7px;
+  -webkit-box-shadow: 0px 0px 50px 15px aqua;
+  box-shadow: 0px 0px 50px 15px aqua;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navOne {
+  width: 500px;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.navOne ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 35px;
+}
+
+.learnBox {
+  position: absolute;
+  margin-top: 175px;
+  width: 130px;
+  height: 150px;
+  background-color: rgb(173, 209, 223);
+  border-radius: 15px;
+  display: none;
+  margin-left: 10px;
+}
+
+.navOne > ul li {
+  cursor: pointer;
+}
+
+.navOne > ul li:hover {
+  color: #471af0;
+}
+
+.learn:hover + .learnBox {
+  display: block;
+}
+
+.learnBox:hover {
+  display: block;
+}
+
+.learnUl {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -35px;
+  padding: 5px 0;
+}
+
+.learnUl li {
+  cursor: pointer;
+  font-size: 0.7em;
+  color: black;
+}
+
+.cssLearning {
+  width: 100%;
+  text-align: center;
+}
+
+.cssLearningBox {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  margin-left: 211px;
+  margin-top: 27px;
+  display: none;
+  background-color: rgb(173, 209, 223);
+  color: white;
+  border-radius: 10px;
+}
+
+.cssLearningBox ul li {
+  margin-left: 10px;
+  font-size: 0.6em;
+  cursor: pointer;
+  margin-top: -37px;
+  margin-left: 0;
+}
+
+.cssLearning:hover + .cssLearningBox {
+  display: flex;
+}
+
+.cssLearningBox:hover {
+  display: flex;
+}
+
+.cssLearningBox ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+
+.burger {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.burger img {
+  width: 100%;
+}
+
+.burgerBigBox {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(0, 0, 5);
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  animation: animOne 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 0;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animOne {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0vh;
+  }
+}
+
+.burgerSmallBox {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 48);
+  opacity: 0.7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.burgerSmallBox nav {
+  margin-left: -120px;
+}
+
+.cPlPlLi::after {
+  content: "*";
+  position: absolute;
+}
+
+.burgerMenuClose {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.burgerMenuClose img {
+  width: 100%;
+}
+
+/* Header Close */
+
+/* Navigetion */
+
+.navMain {
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(47, 95, 114);
+  position: fixed;
+}
+
+.navTitle {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  color: white;
+}
+
+/* Navigetion Close */
+
+/* Learning Big Box */
+
+.learnBigBoxJavaScript, .learnBigBoxHTML, .learnBigBoxCss, .learnBigBoxGit, .learnBigBoxCplpl {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 81, 87);
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 90px;
+  height: 80px;
+}
+
+.learnBigBoxJavaScript {
+  width: 130px;
+  height: 100px;
+  -moz-transform: scale(0.7) rotate(27deg) skew(-14deg, -9deg);
+  -webkit-transform: scale(0.7) rotate(27deg) skew(-14deg, -9deg);
+  -o-transform: scale(0.7) rotate(27deg) skew(-14deg, -9deg);
+  -ms-transform: scale(0.7) rotate(27deg) skew(-14deg, -9deg);
+  transform: scale(0.7) rotate(27deg) skew(-14deg, -9deg);
+  margin-left: 10px;
+  font-size: 1.3em;
+  -webkit-border-radius: 19px 17px 10px 40px;
+  -moz-border-radius: 19px 17px 10px 40px;
+  border-radius: 19px 17px 10px 40px;
+}
+
+.learnBigBoxHTML {
+  -moz-transform: rotate(33deg) translate(70px, -80px) skew(0deg, -23deg);
+  -webkit-transform: rotate(33deg) translate(70px, -80px) skew(0deg, -23deg);
+  -o-transform: rotate(33deg) translate(70px, -80px) skew(0deg, -23deg);
+  -ms-transform: rotate(33deg) translate(70px, -80px) skew(0deg, -23deg);
+  transform: rotate(33deg) translate(70px, -80px) skew(0deg, -23deg);
+  margin-left: 10px;
+  border-radius: 29px 0px 29px 40px;
+}
+
+.learnBigBoxCss {
+  -moz-transform: scale(0.8) rotate(67deg) skew(45deg, -30deg);
+  -webkit-transform: scale(0.8) rotate(67deg) skew(45deg, -30deg);
+  -o-transform: scale(0.8) rotate(67deg) skew(45deg, -30deg);
+  -ms-transform: scale(0.8) rotate(67deg) skew(45deg, -30deg);
+  transform: scale(0.8) rotate(67deg) skew(45deg, -30deg);
+  margin: -50px 15px;
+  -webkit-border-radius: 12px 26px 11px 32px;
+  -moz-border-radius: 12px 26px 11px 32px;
+  border-radius: 12px 26px 11px 32px;
+}
+
+.learnBigBoxGit {
+  width: 100px;
+  margin: -50px 15px;
+  border-radius: 12px 26px 11px 32px;
+  -moz-transform: scale(1.1) translate(100px, 10px) skew(17deg, -25deg);
+  -webkit-transform: scale(1.1) translate(100px, 10px) skew(17deg, -25deg);
+  -o-transform: scale(1.1) translate(100px, 10px) skew(17deg, -25deg);
+  -ms-transform: scale(1.1) translate(100px, 10px) skew(17deg, -25deg);
+  transform: scale(1.1) translate(100px, 10px) skew(17deg, -25deg);
+}
+
+.learnBigBoxCplpl {
+  width: 100px;
+  -moz-transform: scale(0.9) skew(-47deg, 30deg);
+  -webkit-transform: scale(0.9) skew(-47deg, 30deg);
+  -o-transform: scale(0.9) skew(-47deg, 30deg);
+  -ms-transform: scale(0.9) skew(-47deg, 30deg);
+  transform: scale(0.9) skew(-47deg, 30deg);
+  margin: 100px 50px;
+  -webkit-border-radius: 5px 30px 5px 40px;
+  -moz-border-radius: 5px 30px 5px 40px;
+  border-radius: 5px 30px 5px 40px;
+}
+
+/* Learning Big Box Close */
+
+/* Menu */
+
+.menuTitle {
+    padding-left: 255px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* background-color: red; */
+    font-size: 1.5em;
+    color: #021550;
+}
+
+.menuTitle p {
+    margin-left: -50px;
+}
+
+.menuContectsBigBox {
+    width: 100%;
+    padding-left: 255px;
+    color: #021550;
+    font-size: 1.2em;
+}
+
+.menuContectsBigBox p {
+    margin-top: 10px;
+}
+
+/* Menu Close */
