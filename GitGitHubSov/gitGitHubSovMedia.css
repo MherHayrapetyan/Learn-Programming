@@ -1,0 +1,30 @@
+/* Burger Menu */
+
+@media only screen and (max-width: 700px) {
+  .navOne {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+/* Burger Menu Close */
+
+/* Content Media */
+
+@media only screen and (max-width: 700px) {
+  .navMain {
+    display: none;
+  }
+  .menuTitle,
+  .menuContectsBigBox {
+    padding-left: 10px;
+  }
+  .htmlSovBigBox {
+    padding-left: 10px;
+  }
+}
+
+/* Content Media Close */
