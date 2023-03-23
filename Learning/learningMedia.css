@@ -1,0 +1,14 @@
+/* Burger Menu */
+
+@media only screen and (max-width: 700px) {
+    .navOne {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+/* Burger Menu Close */
+
