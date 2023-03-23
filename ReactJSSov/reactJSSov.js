@@ -16,7 +16,7 @@ const akardionBigBox = document.querySelector(".htmlSovBigBoxInformVideo")
 class NewVideoDiv {
   constructor(num, src) {
     this.$div = document.createElement("div");
-    this.$div.innerHTML = `<div class="htmlSovBigBoxInformVideoOne">C++ - ${num} Վիդեոդաս</div>
+    this.$div.innerHTML = `<div class="htmlSovBigBoxInformVideoOne">ReactJS - ${num} Վիդեոդաս</div>
     <div class="htmlSovBigBoxInformVideoOneVideo">
       <iframe
         width="100%"
@@ -29,8 +29,8 @@ class NewVideoDiv {
   }
 }
 
-for (a = 1; a <= 12; a++) {
-  new NewVideoDiv(a, `https://www.youtube.com/watch?v=hi38vVvJvFE&list=PLkVo56yGU5PpBU1YjOlNzGH5xGgGaTGg3&index=${a}`)
+for (a = 1; a <= 19; a++) {
+  new NewVideoDiv(a, `https://www.youtube.com/watch?v=o79XEqOlJ2A&list=PLkVo56yGU5PoUyNbXET7PuvzzBGdK5L1y&index=${a}`)
   console.log(a)
 }
 

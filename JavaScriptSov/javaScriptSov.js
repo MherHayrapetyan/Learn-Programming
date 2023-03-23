@@ -29,9 +29,9 @@ class NewVideoDiv {
   }
 }
 
-for (i = 1; i <= 16; i++) {
-  new NewVideoDiv(i, `https://www.youtube.com/watch?v=OgXbNPsSlzE&list=PLQLz3vJxwofgWKw4uJx-90np3wuS8Sqgn&index=${i}`)
-  console.log(i)
+for (a = 1; a <= 16; a++) {
+  new NewVideoDiv(a, `https://www.youtube.com/watch?v=OgXbNPsSlzE&list=PLQLz3vJxwofgWKw4uJx-90np3wuS8Sqgn&index=${a}`)
+  console.log(a)
 }
 
 const videoText = document.querySelectorAll(".htmlSovBigBoxInformVideoOne");
