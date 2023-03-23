@@ -1,14 +1,13 @@
 /* Burger Menu */
 
 @media only screen and (max-width: 700px) {
-    .navOne {
-        display: none;
-    }
+  .navOne {
+    display: none;
+  }
 
-    .burger {
-        display: block;
-    }
+  .burger {
+    display: block;
+  }
 }
 
 /* Burger Menu Close */
-

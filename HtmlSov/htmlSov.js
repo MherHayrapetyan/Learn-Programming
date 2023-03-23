@@ -11,7 +11,7 @@ function burgerMenu() {
 
 // Akardion + Video
 
-const akardionBigBox = document.querySelector(".htmlSovBigBoxInformVideo")
+const akardionBigBox = document.querySelector(".htmlSovBigBoxInformVideo");
 
 class NewVideoDiv {
   constructor(num, src) {
@@ -25,13 +25,16 @@ class NewVideoDiv {
       >
       </iframe>
     </div>`;
-    akardionBigBox.appendChild(this.$div)
+    akardionBigBox.appendChild(this.$div);
   }
 }
 
 for (a = 1; a <= 7; a++) {
-  new NewVideoDiv(a, `https://www.youtube.com/watch?v=OKXnluu0Tyo&list=PLQLz3vJxwofidPwn78q-IP3pL10heDdRi&index=${a}`)
-  console.log(a)
+  new NewVideoDiv(
+    a,
+    `https://www.youtube.com/watch?v=OKXnluu0Tyo&list=PLQLz3vJxwofidPwn78q-IP3pL10heDdRi&index=${a}`
+  );
+  console.log(a);
 }
 
 const videoText = document.querySelectorAll(".htmlSovBigBoxInformVideoOne");

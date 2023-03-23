@@ -235,7 +235,11 @@ header {
 
 /* Learning Big Box */
 
-.learnBigBoxJavaScript, .learnBigBoxHTML, .learnBigBoxCss, .learnBigBoxGit, .learnBigBoxCplpl {
+.learnBigBoxJavaScript,
+.learnBigBoxHTML,
+.learnBigBoxCss,
+.learnBigBoxGit,
+.learnBigBoxCplpl {
   color: rgb(255, 255, 255);
   background-color: rgb(0, 81, 87);
   font-size: 1.1em;
@@ -313,30 +317,30 @@ header {
 /* Menu */
 
 .menuTitle {
-    padding-left: 255px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    /* background-color: red; */
-    font-size: 1.5em;
-    color: #021550;
+  padding-left: 255px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  /* background-color: red; */
+  font-size: 1.5em;
+  color: #021550;
 }
 
 .menuTitle p {
-    margin-left: -50px;
+  margin-left: -50px;
 }
 
 .menuContectsBigBox {
-    width: 100%;
-    padding-left: 255px;
-    color: #021550;
-    font-size: 1.2em;
+  width: 100%;
+  padding-left: 255px;
+  color: #021550;
+  font-size: 1.2em;
 }
 
 .menuContectsBigBox p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* Menu Close */

@@ -11,7 +11,7 @@ function burgerMenu() {
 
 // Akardion + Video
 
-const akardionBigBox = document.querySelector(".htmlSovBigBoxInformVideo")
+const akardionBigBox = document.querySelector(".htmlSovBigBoxInformVideo");
 
 class NewVideoDiv {
   constructor(num, src) {
@@ -25,11 +25,11 @@ class NewVideoDiv {
       >
       </iframe>
     </div>`;
-    akardionBigBox.appendChild(this.$div)
+    akardionBigBox.appendChild(this.$div);
   }
 }
 
-new NewVideoDiv()
+new NewVideoDiv();
 
 const videoText = document.querySelectorAll(".htmlSovBigBoxInformVideoOne");
 const videoYoutub = document.querySelectorAll(
